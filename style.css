@@ -1,4 +1,21 @@
 body {
     display: flex;
     flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background-color: #1f2937;
+}
+
+.firstSection {
+    background-color: #1f2937;
+}
+
+.quoteSection {
+    background-color: #e5e7eb;
+}
+
+.footer {
+    background-color: #e5e7eb;
 }
