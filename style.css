@@ -4,6 +4,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     justify-content: space-between;
+    min-height: 100vh;
     
 }
 
@@ -41,9 +42,10 @@ body {
     color: #e5e7eb;
     font-size: 18px;
     display: flex;
-    padding: 100px;
+    padding: 0 100px;
     gap: 30px;
-    flex: 1;
+    flex: 1 1 350px;
+    align-items: center;
 
 }
 
@@ -67,13 +69,14 @@ body {
     font-size: small;
     font-weight: bolder;
     flex: 1 1 0;
-    min-width: 400px;
+    min-height: 300px;
+    min-width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.textSignUp button {
+button {
     background-color: #3882F6;
     border-radius: 5px;
     color: #e5e7eb;
@@ -83,9 +86,10 @@ body {
     font-size: 18px;
     font-weight: bolder;
     margin-top: 10px;
+    border: 2px solid #e5e7eb;
 }
 
-.textSignUp button:active {
+button:active {
     color: #3882F6;
     background-color: #e5e7eb;
 } 
@@ -93,13 +97,13 @@ body {
 .informationSection {
     display: flex;
     flex-direction: column;
-    flex:1 1 350px;
+    flex: 1 1 300px;
     align-items: center;
     gap: 30px;
     font-size: 36px;
     font-weight: bold;
     color: #1f2937;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .cards {
@@ -129,8 +133,40 @@ body {
 
 .quoteSection {
     background-color: #e5e7eb;
+    flex: 1 1 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quoteSection div {
+
+}
+.callToSignSection {
+    flex: 0.7 0.7 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.callToSignSection div {
+    background-color: #3882F6;
+    color: #e5e7eb;
+    width: 60%;
+    height: 60%;
+    border: 3px solid #1f2937;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .footer {
-    background-color: #e5e7eb;
+    background-color: #1f2937;
+    color: #e5e7eb;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
