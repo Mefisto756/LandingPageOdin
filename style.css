@@ -1,79 +1,77 @@
 body {
     display: flex;
     flex-direction: column;
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
     justify-content: space-between;
-    min-height: 100vh;
-    
+
+    font-family: 'Roboto', sans-serif;
+
+    margin: 0;      
+    min-height: 100vh;  
+}
+
+a {
+    text-decoration: none;
+    color: #e5e7eb;
 }
 
 .header {
     background-color: #1f2937;
+
     display: flex;
     justify-content: space-between;
+
     padding: 10px 100px;
 }
 
 .header ul {
+    display: flex;
+
     list-style: none;
+
+    font-size: 18px;
     margin: 0;
     padding: 0;
-    display: flex;
     gap: 15px;
-}
-
-.header ul li {
-    margin: 0;
-    color: #e5e7eb;
-    font-size: 18px;
 }
 
 #logo {
     font-size: 24px;
     font-weight: bolder;
-    color: #F9FAF8;
-    text-decoration: none;
 }
 
 
 .firstSection {
-    background-color: #1f2937;
-    color: #e5e7eb;
-    font-size: 18px;
     display: flex;
-    padding: 0 100px;
-    gap: 30px;
-    flex: 1 1 350px;
     align-items: center;
+    justify-content: center;
+    flex: 1 1 350px;
 
+    background-color: #1f2937;
+
+    gap: 30px;
 }
 
+.textSignUp {
+    flex: 1;
+    max-width: 30%; 
+}
 .textSignUp h1{
     color: #F9FAF8;
     font-weight: bolder;
     font-size: 48px;
     margin: 0px;
+
 }
 
 .textSignUp p {
     font-size: 18px;
     color: #e5e7eb;
-    margin: 0px;
-    
+    margin: 0px;   
 }
 
-.image {
-    background-color: #e5e7eb;
-    color: #1f2937;;
-    font-size: small;
-    font-weight: bolder;
-    flex: 1 1 0;
-    min-height: 300px;
-    min-width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#heroImage {
+    max-width: 200px;
+    border-radius: 6px;
 }
 
 button {
@@ -110,13 +108,10 @@ button:active {
     display: flex;
     justify-content: center;
     gap: 40px;
-
-}
-
-.description {
     font-size: 18px;
     color: #1f2937;
     font-weight: lighter;
+
 }
 
 .card {
@@ -124,11 +119,11 @@ button:active {
     width: 100px;
 }
 
-.border {
+.border img {
     height: 100px;
     width: 100px;
     border-radius: 10px;
-    border: 3px solid #3882F6;
+    border: 4px solid #3882F6;
 }
 
 .quoteSection {
@@ -138,9 +133,20 @@ button:active {
     align-items: center;
     justify-content: center;
 }
-.quoteSection div {
 
+.container {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    font-style: italic;
+    color: #1f2937;
 }
+
+#Author {
+    font-weight: bolder;
+    align-self: flex-end;
+}
+
 .callToSignSection {
     flex: 0.7 0.7 200px;
     display: flex;
